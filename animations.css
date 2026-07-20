@@ -1,0 +1,303 @@
+/* =========================================
+   GLOBAL TRANSITIONS
+========================================= */
+
+* {
+    transition: color 0.3s ease,
+                background-color 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease,
+                transform 0.3s ease;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* =========================================
+   BUTTON HOVER EFFECTS
+========================================= */
+
+.btn{
+    transition:all .35s ease;
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+.btn:active{
+
+    transform:translateY(-1px);
+
+}
+
+/* =========================================
+   NAVBAR LINKS
+========================================= */
+
+.navbar-nav .nav-link{
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+.navbar-nav .nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#d4af37;
+
+    transition:.35s;
+
+    transform:translateX(-50%);
+
+}
+
+.navbar-nav .nav-link:hover{
+
+    color:#d4af37 !important;
+
+}
+
+.navbar-nav .nav-link:hover::after{
+
+    width:70%;
+
+}
+
+/* Active page */
+
+.navbar-nav .nav-link.active{
+
+    color:#d4af37 !important;
+
+}
+
+.navbar-nav .nav-link.active::after{
+
+    width:70%;
+
+}
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.card{
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+/* =========================================
+   IMAGE ZOOM
+========================================= */
+
+.image-hover{
+
+    overflow:hidden;
+
+}
+
+.image-hover img{
+
+    transition:transform .45s ease;
+
+}
+
+.image-hover:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* =========================================
+   ICON HOVER
+========================================= */
+
+.icon-hover{
+
+    transition:.3s;
+
+}
+
+.icon-hover:hover{
+
+    transform:scale(1.15);
+
+    color:#d4af37;
+
+}
+
+/* =========================================
+   FORM FOCUS
+========================================= */
+
+.form-control,
+.form-select{
+
+    transition:.3s;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#d4af37;
+
+    box-shadow:0 0 12px rgba(212,175,55,.35);
+
+}
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons a{
+
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-4px);
+
+    color:#d4af37;
+
+}
+
+/* =========================================
+   FOOTER LINKS
+========================================= */
+
+.footer a{
+
+    transition:.3s;
+
+}
+
+.footer a:hover{
+
+    color:#d4af37;
+
+    padding-left:6px;
+
+}
+
+/* =========================================
+   SECTION TITLES
+========================================= */
+
+.section-title{
+
+    transition:.3s;
+
+}
+
+.section-title:hover{
+
+    letter-spacing:1px;
+
+}
+
+/* =========================================
+   GALLERY OVERLAY
+========================================= */
+
+.gallery-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.gallery-item img{
+
+    transition:.45s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.gallery-item:hover .gallery-overlay{
+
+    opacity:1;
+
+}
+
+/* =========================================
+   FADE-IN ANIMATION
+========================================= */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
