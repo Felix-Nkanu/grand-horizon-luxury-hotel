@@ -3417,10 +3417,12 @@ ABOUT HERO SECTION
     position: relative;
     min-height: 90vh;
     display: flex;
+    padding-top: 100px;
     align-items: center;
     background:
         linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
         url("images/dining-hero.jpg") center center/cover no-repeat;
+        
 }
 
 .hero-tag{
