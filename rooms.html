@@ -53,7 +53,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="suite.html">Rooms & Suites</a>
+                    <a class="nav-link " href="rooms.html">Rooms & Suites</a>
                 </li>
 
                 <li class="nav-item">
@@ -76,7 +76,7 @@
 
             <!-- Button -->
 
-            <a href="booking.html" class="btn hotel-btn">
+            <a href="booking.html" class="btn hotel-btn" id="bookingBtn">
                 Enquire Now
             </a>
 
@@ -139,7 +139,7 @@
         OUR ROOMS & SUITES
 ======================================-->
 
-<section class="rooms-section py-5">
+<section class="rooms-section py-5 reveal">
 
     <div class="container">
 
@@ -192,10 +192,25 @@
 
                         </ul>
 
-                        <a href="booking.html" class="btn btn-gold">
-                            Book Now
-                        </a>
+                    <div class="room-footer">
 
+    <div class="price">
+
+        <span>Starting From</span>
+
+        <h3>$180 <small>/ Night</small></h3>
+
+    </div>
+
+    <button
+        class="btn-room room-details-btn"
+        data-room="deluxe">
+
+        View Details
+
+    </button>
+
+</div>
                     </div>
 
                 </div>
@@ -232,9 +247,25 @@
 
                         </ul>
 
-                        <a href="booking.html" class="btn btn-gold">
-                            Book Now
-                        </a>
+                        <div class="room-footer">
+
+                    <div class="price">
+
+                        <span>Starting From</span>
+
+                        <h3>$250 <small>/ Night</small></h3>
+
+                    </div>
+
+                    <button
+                        class="btn-room room-details-btn"
+                        data-room="executive">
+
+                        View Details
+
+                    </button>
+
+                </div>
 
                     </div>
 
@@ -272,9 +303,25 @@
 
                         </ul>
 
-                        <a href="booking.html" class="btn btn-gold">
-                            Book Now
-                        </a>
+                        <div class="room-footer">
+
+                    <div class="price">
+
+                        <span>Starting From</span>
+
+                        <h3>$450 <small>/ Night</small></h3>
+
+                    </div>
+
+                    <button
+                        class="btn-room room-details-btn"
+                        data-room="presidential">
+
+                        View Details
+
+                    </button>
+
+                </div>
 
                     </div>
 
@@ -291,7 +338,7 @@
       FEATURED LUXURY SUITE
 ======================================-->
 
-<section class="featured-suite py-5">
+<section class="featured-suite py-5 reveal">
 
     <div class="container">
 
@@ -383,17 +430,23 @@
 
                 </div>
 
-                <div class="mt-4">
+                <div class="mt-4 d-flex flex-column flex-md-row gap-3">
 
-                    <a href="booking.html" class="btn btn-gold me-3">
+                    <a href="booking.html"
+                    class="btn btn-gold me-md-3">
+
                         Book This Suite
+
                     </a>
 
-                    <a href="contact.html" class="btn btn-outline-dark">
+                    <a href="contact.html"
+                    class="btn btn-outline-dark">
+
                         Contact Us
+
                     </a>
 
-                </div>
+        </div>
 
             </div>
 
@@ -406,7 +459,7 @@
         ROOM AMENITIES
 ======================================-->
 
-<section class="room-amenities py-5">
+<section class="room-amenities py-5 reveal">
 
     <div class="container">
 
@@ -502,7 +555,7 @@
         WHY STAY WITH US
 ======================================-->
 
-<section class="why-stay py-5">
+<section class="why-stay py-5 reveal">
 
     <div class="container">
 
@@ -648,7 +701,7 @@
         GUEST REVIEWS
 ======================================-->
 
-<section class="guest-reviews py-5">
+<section class="guest-reviews py-5 reveal">
 
     <div class="container">
 
@@ -792,7 +845,7 @@
         FREQUENTLY ASKED QUESTIONS
 ======================================-->
 
-<section class="faq-section py-5">
+<section class="faq-section py-5 reveal">
 
     <div class="container">
 
@@ -972,7 +1025,7 @@
         BOOK YOUR STAY CTA
 ======================================-->
 
-<section class="booking-cta">
+<section class="booking-cta reveal">
 
     <div class="container">
 
@@ -1008,6 +1061,77 @@
                 </div>
 
             </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==========================
+    NEWSLETTER
+===========================-->
+
+<section class="newsletter reveal">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <span class="section-subtitle">
+                Stay Connected
+            </span>
+
+            <h2>
+                Subscribe to Our Newsletter
+            </h2>
+
+            <p>
+                Be the first to receive exclusive offers, seasonal promotions,
+                luxury travel inspiration, and the latest news from Grand Horizon
+                Luxury Hotel.
+            </p>
+
+            <form class="newsletter-form" id="newsletterForm">
+
+    <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your email address"
+        required>
+
+    <button
+        type="submit"
+        id="newsletterBtn">
+
+        Subscribe
+
+    </button>
+
+</form>
+
+<div id="newsletterError" class="error-box">
+
+    <i class="bi bi-exclamation-circle-fill"></i>
+
+    <p class="mb-0 mt-2">
+
+        Please enter a valid email address.
+
+    </p>
+
+</div>
+
+<div id="newsletterSuccess" class="success-box">
+
+    <i class="bi bi-check-circle-fill"></i>
+
+    <p class="mb-0 mt-2">
+
+        Thank you for subscribing to our newsletter.
+
+    </p>
+
+</div>
 
         </div>
 
@@ -1133,7 +1257,61 @@
     </div>
 
 </footer>
+<button id="backToTop" class="back-to-top">
+
+    <i class="bi bi-arrow-up"></i>
+</button>
+<!--=========================================
+            Room Details Modal
+==========================================-->
+
+<div class="room-modal" id="roomModal">
+
+    <div class="room-modal-content">
+
+        <span class="close-room-modal">&times;</span>
+
+        <img
+            src=""
+            alt="Room Image"
+            id="modalRoomImage"
+        >
+
+        <div class="room-modal-body">
+
+            <h2 id="modalRoomTitle"></h2>
+
+            <p id="modalRoomDescription"></p>
+
+            <ul class="modal-features" id="modalRoomFeatures">
+
+            </ul>
+
+            <div class="modal-footer">
+
+                <div class="modal-price">
+
+                    <span>Starting From</span>
+
+                    <h3 id="modalRoomPrice"></h3>
+
+                </div>
+
+                <a href="booking.html" class="btn btn-gold">
+
+                    Book Now
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
-<script src="./animations.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>

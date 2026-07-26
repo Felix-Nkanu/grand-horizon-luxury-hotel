@@ -49,7 +49,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="about.html">About</a>
+                    <a class="nav-link " href="about.html">About</a>
                 </li>
 
                 <li class="nav-item">
@@ -76,7 +76,7 @@
 
             <!-- Button -->
 
-            <a href="booking.html" class="btn hotel-btn">
+            <a href="booking.html" class="btn hotel-btn" id="bookingBtn">
                 Enquire Now
             </a>
 
@@ -138,7 +138,7 @@
       OUR STORY SECTION
 ===========================-->
 
-<section class="our-story py-5">
+<section class="our-story py-5 reveal">
 
     <div class="container">
 
@@ -187,7 +187,7 @@
       MISSION & VISION
 ===========================-->
 
-<section class="mission-vision py-5">
+<section class="mission-vision py-5 reveal">
 
     <div class="container">
 
@@ -259,7 +259,7 @@
         WHY CHOOSE US SECTION
 =====================================-->
 
-<section class="why-choose py-5">
+<section class="why-choose py-5 reveal">
 
     <div class="container">
 
@@ -397,7 +397,7 @@
         OUR CORE VALUES
 ======================================-->
 
-<section class="core-values py-5">
+<section class="core-values py-5 reveal">
 
     <div class="container">
 
@@ -502,7 +502,7 @@
         HOTEL BY THE NUMBERS
 ======================================-->
 
-<section class="hotel-stats py-5">
+<section class="hotel-stats py-5 reveal">
 
     <div class="container">
 
@@ -583,7 +583,7 @@
         BOOK YOUR STAY CTA
 ======================================-->
 
-<section class="about-cta">
+<section class="about-cta reveal">
 
     <div class="container">
 
@@ -629,11 +629,82 @@
     </div>
 
 </section>
+<!--==========================
+    NEWSLETTER
+===========================-->
+
+<section class="newsletter reveal">
+
+    <div class="container">
+
+        <div class="newsletter-box">
+
+            <span class="section-subtitle">
+                Stay Connected
+            </span>
+
+            <h2>
+                Subscribe to Our Newsletter
+            </h2>
+
+            <p>
+                Be the first to receive exclusive offers, seasonal promotions,
+                luxury travel inspiration, and the latest news from Grand Horizon
+                Luxury Hotel.
+            </p>
+
+            <form class="newsletter-form" id="newsletterForm">
+
+    <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your email address"
+        required>
+
+    <button
+        type="submit"
+        id="newsletterBtn">
+
+        Subscribe
+
+    </button>
+
+</form>
+
+<div id="newsletterError" class="error-box">
+
+    <i class="bi bi-exclamation-circle-fill"></i>
+
+    <p class="mb-0 mt-2">
+
+        Please enter a valid email address.
+
+    </p>
+
+</div>
+
+<div id="newsletterSuccess" class="success-box">
+
+    <i class="bi bi-check-circle-fill"></i>
+
+    <p class="mb-0 mt-2">
+
+        Thank you for subscribing to our newsletter.
+
+    </p>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- ==========================
      FOOTER
 ========================== -->
-<footer class="hotel-footer">
+<footer class="hotel-footer ">
 
     <div class="container">
 
@@ -749,7 +820,15 @@
     </div>
 
 </footer>
+<!-- ==========================
+      Back To Top Button
+========================== -->
+
+<button id="backToTop" class="back-to-top">
+
+    <i class="bi bi-arrow-up"></i>
+</button>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  
-<script src="./animations.js"></script>  
+<script src="./script.js"></script> 
 </body>
 </html>
