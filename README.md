@@ -91,5 +91,7 @@ grand-horizon-luxury-hotel/
 
 **Felix Nkanu**
 
-- Portfolio: https://my-portfolio-website-psi-one.vercel.app/
-- GitHub: https://github.com/Felix-Nkanu
+- **Email:** felixnkanu636@gmail.com
+- **Portfolio:** [Visit My Portfolio](https://your-vercel-portfolio-url.vercel.app)
+- **LinkedIn:** [Felix Nkanu](https://www.linkedin.com/in/felix-nkanu/)
+- **GitHub:** [Felix-Nkanu](https://github.com/Felix-Nkanu)
