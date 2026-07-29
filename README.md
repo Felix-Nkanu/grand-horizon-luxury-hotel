@@ -39,19 +39,25 @@ https://grand-horizon-luxury-hotel.vercel.app
 
 ### 🏨 Homepage
 
-(Add screenshot here)
+![Homepage](screenshots/hotel-homepage.png)
 
 ---
 
-### 🛏️ Rooms Section
+### 🛏️ Rooms
 
-(Add screenshot here)
+![Rooms](screenshots/hotel-rooms.png)
+
+---
+
+### 🖼️ Gallery
+
+![Gallery](screenshots/hotel-gallery.png)
 
 ---
 
 ### 📱 Mobile View
 
-(Add screenshot here)
+![Mobile](screenshots/hotel-mobile.png)
 
 ---
 
